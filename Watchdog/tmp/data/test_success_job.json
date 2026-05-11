@@ -1,0 +1,10 @@
+{
+  "job_id": "success-test",
+  "description": "Test job that succeeds",
+  "schedule": "2026-05-11T14:16:00Z",
+  "task": {
+    "type": "shell",
+    "command": "echo 'Success test completed' && date",
+    "timeout": 10
+  }
+}

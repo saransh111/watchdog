@@ -1,0 +1,10 @@
+{
+  "job_id": "test8-config-handler",
+  "description": "Test config file processing",
+  "schedule": "2026-05-11T09:52:35Z",
+  "task": {
+    "type": "config",
+    "command": "/Users/saransh.bhaduka/Watchdog/tmp/test_config.json",
+    "timeout": 10
+  }
+}

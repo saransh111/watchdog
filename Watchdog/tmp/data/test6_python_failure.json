@@ -1,0 +1,10 @@
+{
+  "job_id": "test6-python-failure",
+  "description": "Test Python script failure - exit with error",
+  "schedule": "2026-05-11T09:52:25Z",
+  "task": {
+    "type": "python3",
+    "command": "python3 -c 'import sys; print(\"This will fail\", file=sys.stderr); sys.exit(1)'",
+    "timeout": 10
+  }
+}

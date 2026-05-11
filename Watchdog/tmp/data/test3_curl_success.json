@@ -1,0 +1,10 @@
+{
+  "job_id": "test3-curl-success",
+  "description": "Test curl command - fetch JSON from API",
+  "schedule": "2026-05-11T09:51:55Z",
+  "task": {
+    "type": "curl",
+    "command": "curl -s https://api.github.com/zen",
+    "timeout": 30
+  }
+}

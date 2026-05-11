@@ -1,0 +1,10 @@
+{
+  "job_id": "test1-shell-success",
+  "description": "Test shell command - create test file",
+  "schedule": "2026-05-11T09:51:35Z",
+  "task": {
+    "type": "shell",
+    "command": "echo 'Shell test successful' > /Users/saransh.bhaduka/Watchdog/tmp/shell_test_output.txt && cat /Users/saransh.bhaduka/Watchdog/tmp/shell_test_output.txt",
+    "timeout": 30
+  }
+}

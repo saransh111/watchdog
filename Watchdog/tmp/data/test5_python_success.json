@@ -1,0 +1,10 @@
+{
+  "job_id": "test5-python-success",
+  "description": "Test Python script - calculate and print result",
+  "schedule": "2026-05-11T09:52:15Z",
+  "task": {
+    "type": "python3",
+    "command": "python3 -c 'import sys; result = sum(range(1, 101)); print(f\"Sum of 1-100: {result}\"); sys.exit(0)'",
+    "timeout": 30
+  }
+}

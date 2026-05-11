@@ -1,0 +1,10 @@
+{
+  "job_id": "shell-example",
+  "description": "Example shell command - list files",
+  "schedule": "*/2 * * * *",
+  "task": {
+    "type": "shell",
+    "command": "ls -la /tmp | head -5",
+    "timeout": 60
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "app_name": "Watchdog Test",
+  "version": "1.0.0",
+  "settings": {
+    "max_workers": 10,
+    "timeout": 300,
+    "retry_enabled": true
+  },
+  "features": ["shell", "curl", "python", "docker"]
+}

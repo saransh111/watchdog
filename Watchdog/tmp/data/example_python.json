@@ -1,0 +1,9 @@
+{
+  "job_id": "python-hello",
+  "description": "Run a simple Python command",
+  "schedule": "2026-05-11T14:00:00Z",
+  "task": {
+    "type": "python",
+    "command": "python3 -c \"import datetime; print(f'Hello from Python at {datetime.datetime.now()}')\""
+  }
+}

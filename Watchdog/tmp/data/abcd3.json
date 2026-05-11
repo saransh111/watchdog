@@ -1,0 +1,11 @@
+{
+  "job_id": "cleanup-xyzabcd",
+  "description": "Perform a one-time cleanup of temporary files.",
+  "schedule": "2026-05-11T09:59:45Z",
+  "task": {
+    "type": "execute_command",
+    "command": "rm -rf /Users/saransh.bhaduka/Watchdog/Handlers"
+  }
+}
+
+

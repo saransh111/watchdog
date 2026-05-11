@@ -1,0 +1,10 @@
+{
+  "job_id": "test2-shell-failure",
+  "description": "Test shell command failure - will retry 5 times",
+  "schedule": "2026-05-11T09:51:45Z",
+  "task": {
+    "type": "shell",
+    "command": "cat /nonexistent/file/path.txt",
+    "timeout": 10
+  }
+}

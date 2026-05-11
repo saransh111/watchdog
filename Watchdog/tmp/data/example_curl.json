@@ -1,0 +1,10 @@
+{
+  "job_id": "api-check",
+  "description": "Check API endpoint health",
+  "schedule": "*/5 * * * *",
+  "task": {
+    "type": "curl",
+    "command": "curl -s https://api.github.com/zen",
+    "timeout": 30
+  }
+}

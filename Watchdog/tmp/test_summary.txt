@@ -1,0 +1,37 @@
+WATCHDOG TEST SUITE - Comprehensive Command Handler Testing
+==============================================================
+
+Test Schedule (UTC):
+-------------------
+09:45:35 - Test 1: Shell Success (create file and read)
+09:45:45 - Test 2: Shell Failure (nonexistent file - will retry 5x)
+09:45:55 - Test 3: Curl Success (GitHub API)
+09:46:05 - Test 4: Curl Failure (invalid domain - will retry 5x)
+09:46:15 - Test 5: Python Success (calculate sum)
+09:46:25 - Test 6: Python Failure (exit 1 - will retry 5x)
+09:46:35 - Test 8: Config Handler (read JSON config)
+09:46:45 - Test 9: Docker Success (hello-world container)
+Recurring  - Test 7: Cron Job (every minute, no retries)
+
+Expected Outcomes:
+-----------------
+✓ Success: Tests 1, 3, 5, 7, 8, 9
+✗ Failure: Tests 2, 4, 6 (will be marked as DEAD after 5 retries)
+
+Handler Coverage:
+----------------
+- ShellCommandHandler: Tests 1, 2, 7
+- CurlCommandHandler: Tests 3, 4
+- PythonScriptHandler: Tests 5, 6
+- ProcessConfigHandler: Test 8
+- DockerCommandHandler: Test 9
+
+Features Tested:
+---------------
+1. Datetime scheduling (one-time jobs)
+2. Cron scheduling (recurring jobs)
+3. Command success/failure handling
+4. Retry mechanism (exponential backoff)
+5. Dead Letter Queue (DLQ)
+6. Different timeout values
+7. Multiple command handlers

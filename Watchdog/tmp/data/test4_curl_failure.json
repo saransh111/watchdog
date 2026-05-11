@@ -1,0 +1,10 @@
+{
+  "job_id": "test4-curl-failure",
+  "description": "Test curl command failure - invalid domain",
+  "schedule": "2026-05-11T09:52:05Z",
+  "task": {
+    "type": "curl",
+    "command": "curl -s --max-time 5 http://this-domain-does-not-exist-12345.invalid/api",
+    "timeout": 10
+  }
+}

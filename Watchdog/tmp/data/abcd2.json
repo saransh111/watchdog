@@ -1,0 +1,9 @@
+{
+  "job_id": "cleanup-xyz",
+  "description": "Perform a one-time cleanup of temporary files.",
+  "schedule": "2025-09-20T02:00:00Z",
+  "task": {
+    "type": "execute_command",
+    "command": "rm -rf /tmp/stale-data/*"
+  }
+}

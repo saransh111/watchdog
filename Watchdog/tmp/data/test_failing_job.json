@@ -1,0 +1,10 @@
+{
+  "job_id": "failing-test",
+  "description": "Test job that fails (for retry testing)",
+  "schedule": "2026-05-11T14:15:00Z",
+  "task": {
+    "type": "shell",
+    "command": "exit 1",
+    "timeout": 10
+  }
+}

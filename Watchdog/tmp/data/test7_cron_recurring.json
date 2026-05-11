@@ -1,0 +1,10 @@
+{
+  "job_id": "test7-cron-recurring",
+  "description": "Test cron job - runs every minute (no retries on failure)",
+  "schedule": "* * * * *",
+  "task": {
+    "type": "shell",
+    "command": "date >> /Users/saransh.bhaduka/Watchdog/tmp/cron_test_log.txt && tail -3 /Users/saransh.bhaduka/Watchdog/tmp/cron_test_log.txt",
+    "timeout": 10
+  }
+}
